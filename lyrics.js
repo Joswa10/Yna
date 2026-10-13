@@ -75,62 +75,62 @@ window.SONGS = {
 
     lyrics: [
       // Verse 1
-      { time: 14.0, text: "Kung sino man ang nakapagparamdam" },
-      { time: 17.6, text: "Sa iyo ng gan'yan" },
-      { time: 21.2, text: "Sana naman ay matutunan niya" },
+      { time: 13.0, text: "Kung sino man ang nakapagparamdam" },
+      { time: 16.6, text: "Sa iyo ng gan'yan" },
+      { time: 20.2, text: "Sana naman ay matutunan niya" },
       { time: 24.8, text: "Na hindi basta lang" },
-      { time: 28.4, text: "Ang iyong halaga, hah-hah" },
-      { time: 32.0, text: "Para ganyanin ka, ah-ah" },
-      { time: 35.6, text: "Laging binabalewala, ah" },
-      { time: 39.2, text: "Siguro naman iyong napapansin" },
-      { time: 42.8, text: "Kung paano tratuhin" },
-      { time: 46.4, text: "Kung ako pa 'yan, 'di ka gagano'nin" },
-      { time: 50.0, text: "At ika'y mamahalin" },
-      { time: 53.6, text: "Na ng tama" },
-      { time: 57.2, text: "At 'yong madarama, hah-hah" },
-      { time: 60.8, text: "Na ika'y mahalaga, ooh" },
+      { time: 26.4, text: "Ang iyong halaga, hah-hah" },
+      { time: 30.0, text: "Para ganyanin ka, ah-ah" },
+      { time: 37.6, text: "Laging binabalewala, ah" },
+      { time: 43.2, text: "Siguro naman iyong napapansin" },
+      { time: 46.8, text: "Kung paano tratuhin" },
+      { time: 51.4, text: "Kung ako pa 'yan, 'di ka gagano'nin" },
+      { time: 54.0, text: "At ika'y mamahalin" },
+      { time: 58.6, text: "Na ng tama" },
+      { time: 61.2, text: "At 'yong madarama, hah-hah" },
+      { time: 69.8, text: "Na ika'y mahalaga, ooh" },
 
       // Chorus 1
-      { time: 62.0, text: "'Di ka mahirap mahalin, hmm" },
-      { time: 66.5, text: "Ikaw ang pangarap na ibigin" },
-      { time: 71.0, text: "Dito ka na lang, sa 'kin ka na lang, oh, baby, hmm" },
-      { time: 75.5, text: "Dito ka na lang, sa 'kin ka na lang, oh, baby, yeah" },
+      { time: 74.0, text: "'Di ka mahirap mahalin, hmm" },
+      { time: 81.5, text: "Ikaw ang pangarap na ibigin" },
+      { time: 90.0, text: "Dito ka na lang, sa 'kin ka na lang, oh, baby, hmm" },
+      { time: 98.5, text: "Dito ka na lang, sa 'kin ka na lang, oh, baby, yeah" },
 
       // Verse 2
-      { time: 82.0, text: "'Di pa ba sapat ang mga luha't" },
-      { time: 85.8, text: "Sakit na nadarama?" },
-      { time: 89.6, text: "Bakit pa kailangang magtiis" },
-      { time: 93.4, text: "Kung hindi ka na masaya" },
-      { time: 97.2, text: "Sa pagmamahal niya? Ah-hah" },
-      { time: 101.0, text: "'Wag nang ipilit pa, hah-hah" },
-      { time: 104.8, text: "Ang sarili sa kaniya, ooh" },
+      { time: 120.0, text: "'Di pa ba sapat ang mga luha't" },
+      { time: 125.8, text: "Sakit na nadarama?" },
+      { time: 129.6, text: "Bakit pa kailangang magtiis" },
+      { time: 132.4, text: "Kung hindi ka na masaya" },
+      { time: 134.2, text: "Sa pagmamahal niya? Ah-hah" },
+      { time: 139.0, text: "'Wag nang ipilit pa, hah-hah" },
+      { time: 145.8, text: "Ang sarili sa kaniya, ooh" },
 
       // Chorus 2
-      { time: 108.0, text: "'Di ka mahirap mahalin" },
-      { time: 112.5, text: "Ikaw ang pangarap na ibigin" },
-      { time: 117.0, text: "Dito ka na lang, sa 'kin ka na lang, oh, baby" },
-      { time: 121.5, text: "Dito ka na lang, sa 'kin ka na lang, oh, baby, ooh" },
+      { time: 150.0, text: "'Di ka mahirap mahalin" },
+      { time: 159.5, text: "Ikaw ang pangarap na ibigin" },
+      { time: 166.6, text: "Dito ka na lang, sa 'kin ka na lang, oh, baby" },
+      { time: 174.5, text: "Dito ka na lang, sa 'kin ka na lang, oh, baby, ooh" },
 
       // Chorus 3
-      { time: 128.0, text: "'Di ka mahirap mahalin" },
-      { time: 132.5, text: "Ikaw ang pangarap ibigin" },
-      { time: 137.0, text: "Dito ka na lang, sa 'kin ka na lang, oh, baby" },
-      { time: 141.5, text: "Dito ka na lang, sa 'kin ka na lang, oh, baby, ah" },
+      { time: 182.0, text: "'Di ka mahirap mahalin" },
+      { time: 189.5, text: "Ikaw ang pangarap ibigin" },
+      { time: 197.0, text: "Dito ka na lang, sa 'kin ka na lang, oh, baby" },
+      { time: 205.5, text: "Dito ka na lang, sa 'kin ka na lang, oh, baby, ah" },
 
       // Bridge
-      { time: 148.0, text: "Ooh, whoa, yeah, yeah" },
+      { time: 213.0, text: "Ooh, whoa, yeah, yeah" },
 
       // Chorus 4
-      { time: 156.0, text: "'Di ka mahirap mahalin" },
-      { time: 160.5, text: "Ikaw ang pangarap na ibigin" },
-      { time: 165.0, text: "Dito ka na lang, sa 'kin ka na lang, oh, baby" },
-      { time: 169.5, text: "Sa 'kin ka na lang, sa 'kin ka na lang, oh, baby, yeah (sa 'kin ka na lang)" },
+      { time: 242.0, text: "'Di ka mahirap mahalin" },
+      { time: 251.5, text: "Ikaw ang pangarap na ibigin" },
+      { time: 260.0, text: "Dito ka na lang, sa 'kin ka na lang, oh, baby" },
+      { time: 266.5, text: "Sa 'kin ka na lang, sa 'kin ka na lang, oh, baby, yeah (sa 'kin ka na lang)" },
 
       // Final Chorus
-      { time: 178.0, text: "'Di ako mahirap mahalin, ah" },
-      { time: 182.5, text: "Ikaw ang pangarap na ibigin" },
-      { time: 187.0, text: "Dito ka na lang, sa 'kin ka na lang, oh, baby" },
-      { time: 191.5, text: "Dito ka na lang, sa 'kin ka na lang, oh, baby, ooh, ah" }
+      { time: 274.0, text: "'Di ako mahirap mahalin, ah" },
+      { time: 281.5, text: "Ikaw ang pangarap na ibigin" },
+      { time: 287.0, text: "Dito ka na lang, sa 'kin ka na lang, oh, baby" },
+      { time: 297.5, text: "Dito ka na lang, sa 'kin ka na lang, oh, baby, ooh, ah" }
     ]
   }
 };

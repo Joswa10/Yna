@@ -75,13 +75,13 @@ window.SONGS = {
 
     lyrics: [
       // Verse 1
-      { time: 13.0, text: "Kung sino man ang nakapagparamdam" },
-      { time: 16.6, text: "Sa iyo ng gan'yan" },
-      { time: 20.2, text: "Sana naman ay matutunan niya" },
-      { time: 24.8, text: "Na hindi basta lang" },
+      { time: 12.0, text: "Kung sino man ang nakapagparamdam" },
+      { time: 15.6, text: "Sa iyo ng gan'yan" },
+      { time: 19.2, text: "Sana naman ay matutunan niya" },
+      { time: 23.8, text: "Na hindi basta lang" },
       { time: 26.4, text: "Ang iyong halaga, hah-hah" },
-      { time: 30.0, text: "Para ganyanin ka, ah-ah" },
-      { time: 37.6, text: "Laging binabalewala, ah" },
+      { time: 29.0, text: "Para ganyanin ka, ah-ah" },
+      { time: 38.0, text: "Laging binabalewala, ah" },
       { time: 43.2, text: "Siguro naman iyong napapansin" },
       { time: 46.8, text: "Kung paano tratuhin" },
       { time: 51.4, text: "Kung ako pa 'yan, 'di ka gagano'nin" },

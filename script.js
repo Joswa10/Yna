@@ -104,7 +104,7 @@
   function revealIntroButton() {
     if (introDone) return;
     el.loader.classList.add('is-done');
-    el.introTitle.style.display = 'none';
+    if (el.introTitle) el.introTitle.style.display = 'none';
     el.introReady.hidden = false;
     el.openBtn.focus({ preventScroll: true });
   }
@@ -386,7 +386,7 @@
 
   /* ---------- 6. Hearts & sparkles ---------- */
   const HEART_PATH = 'M50 88 C20 66 6 48 6 32 C6 18 17 9 29 9 C38 9 46 14 50 22 C54 14 62 9 71 9 C83 9 94 18 94 32 C94 48 80 66 50 88 Z';
-  const MESSAGES = ['♡', 'for you', 'you make life sweeter', 'my favorite spring', 'always you'];
+  const MESSAGES = ['joswa'];
   const VARIANTS = ['blush', 'blush', 'white', 'glow', 'lav'];
   const maxHearts = () => (isSmall() ? 4 : 8);
 

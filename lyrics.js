@@ -21,39 +21,39 @@ window.SONGS = {
     endingSubtitle: "And this one is for you. ♡",
 
     lyrics: [
-      // Verse 1
-      { time: 14.0,  text: "가려진 오랜 시간이",                       rom: "garyeojin oraen shigani",                         en: "A long time hidden" },
-      { time: 20.0,  text: "우리를 다시 불러와",                       rom: "urireul dashi bulleowa",                           en: "Brings us back" },
-      { time: 27.0,  text: "어느 곳에 있어도",                         rom: "eoneu gose isseodo",                              en: "No matter where you are" },
-      { time: 32.0,  text: "그 끝은 항상 너인걸",                       rom: "geu kkeucheun hangsang neoingeol",                 en: "The end is always you" },
+     // Verse 1
+      { time: 13.0,  text: "가려진 오랜 시간이",                       rom: "garyeojin oraen shigani" },
+      { time: 19.0,  text: "우리를 다시 불러와",                       rom: "urireul dashi bulleowa" },
+      { time: 25.0,  text: "어느 곳에 있어도",                         rom: "eoneu gose isseodo" },
+      { time: 31.0,  text: "그 끝은 항상 너인걸",                       rom: "geu kkeucheun hangsang neoingeol" },
 
       // Chorus 1
       { time: 39.0,  text: "'Cause I'm falling slowly in love with you" },
-      { time: 45.0,  text: "오랫동안 기다려온 너는 봄이야",             rom: "oraetdong-an gidaryeoon neoneun bomiya",          en: "You, whom I've waited for so long, are spring" },
-      { time: 53.5,  text: "'Cause I'm falling slowly in love with you" },
-      { time: 57.0,  text: "다시 지워진다 해도, all my life is you",      rom: "dasi jiwonjinda haedo, all my life is you",        en: "Even if it's erased again, all my life is you" },
+      { time: 45.0,  text: "오랫동안 기다려온 너는 봄이야",             rom: "oraetdong-an gidaryeoon neoneun bomiya" },
+      { time: 52.0,  text: "'Cause I'm falling slowly in love with you" },
+      { time: 58.0,  text: "다시 지워진다 해도, all my life is you",      rom: "dasi jiwonjinda haedo, all my life is you" },
 
       // Verse 2
-      { time: 122.0, text: "너라는 이야기 속에",                       rom: "neoraneun iyagi soge",                             en: "In the story of you" },
-      { time: 128.0, text: "다시 또 꿈을 꾸는 나",                     rom: "dashi tto kkumeul kkuneun na",                    en: "I'm dreaming again" },
-      { time: 135.0, text: "어떤 순간이 와도",                         rom: "eotteon sungani wado",                            en: "No matter what moment comes" },
-      { time: 141.0, text: "난 너를 찾아 갈거야",                       rom: "nan neoreul chaja galgeoya",                       en: "I'm going to find you" },
+      { time: 74.0,  text: "너라는 이야기 속에",                       rom: "neoraneun iyagi soge" },
+      { time: 80.0,  text: "다시 또 꿈을 꾸는 나",                     rom: "dashi tto kkumeul kkuneun na" },
+      { time: 86.0,  text: "어떤 순간이 와도",                         rom: "eotteon sungani wado" },
+      { time: 92.0,  text: "난 너를 찾아 갈거야",                       rom: "nan neoreul chaja galgeoya" },
 
       // Chorus 2
-      { time: 147.0, text: "'Cause I'm falling slowly in love with you" },
-      { time: 154.0, text: "오랫동안 기다려온 너는 봄이야",             rom: "oraetdong-an gidaryeoon neoneun bomiya",          en: "You, whom I've waited for so long, are spring" },
-      { time: 200.0, text: "'Cause I'm falling slowly in love with you" },
-      { time: 206.0, text: "다시 지워진다 해도, all my life is you",      rom: "dasi jiwonjinda haedo, all my life is you",        en: "Even if it's erased again, all my life is you" },
+      { time: 99.0,  text: "'Cause I'm falling slowly in love with you" },
+      { time: 105.0, text: "오랫동안 기다려온 너는 봄이야",             rom: "oraetdong-an gidaryeoon neoneun bomiya" },
+      { time: 112.0, text: "'Cause I'm falling slowly in love with you" },
+      { time: 118.0, text: "다시 지워진다 해도, all my life is you",      rom: "dasi jiwonjinda haedo, all my life is you" },
 
       // Bridge
-      { time: 217.0, text: "꽃잎 날리던 하얀 길위에",                   rom: "kkot-ip nallideon hayan gil-wie",                  en: "On the white road where petals were flying" },
-      { time: 224.0, text: "행복했던 너와 나 다시 만날 수 있다면",       rom: "haengbokhaessdeon neowa na dashi mannal su issdamyeon", en: "If you and I, who were happy, can meet again" },
+      { time: 128.0, text: "꽃잎 날리던 하얀 길위에",                   rom: "kkot-ip nallideon hayan gil-wie" },
+      { time: 135.0, text: "행복했던 너와 나 다시 만날 수 있다면",       rom: "haengbokhaessdeon neowa na dashi mannal su issdamyeon" },
 
       // Final Chorus
-      { time: 235.0, text: "'Cause I'm falling slowly in love with you" },
-      { time: 242.0, text: "오랫동안 기다려온 너는 봄이야",             rom: "oraetdong-an gidaryeoon neoneun bomiya",          en: "You, whom I've waited for so long, are spring" },
-      { time: 250.0, text: "'Cause I'm falling slowly in love with you" },
-      { time: 257.0, text: "다시 지워진다 해도, all my life is you",      rom: "dasi jiwonjinda haedo, all my life is you",        en: "Even if it's erased again, all my life is you" }
+      { time: 147.0, text: "'Cause I'm falling slowly in love with you" },
+      { time: 154.0, text: "오랫동안 기다려온 너는 봄이야",             rom: "oraetdong-an gidaryeoon neoneun bomiya" },
+      { time: 161.0, text: "'Cause I'm falling slowly in love with you" },
+      { time: 168.0, text: "다시 지워진다 해도, all my life is you",      rom: "dasi jiwonjinda haedo, all my life is you" }
     ]
   },
 

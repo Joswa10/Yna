@@ -6,7 +6,7 @@
 window.SPRING_SNOW = {
   // Put your audio file at assets/spring-snow.mp3 (or change this path).
   // Leave as "" to run in silent preview mode.
-  audioSrc: "assets/spring-snow.mp3",
+  audioSrc: "spring-snow.mp3",
 
   // The playback window, in seconds from the start of the ORIGINAL track.
   startTime: 20,   // 0:20

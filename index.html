@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Spring Snow ♡</title>
+  <meta name="description" content="A little something, made for you.">
+  <meta name="theme-color" content="#b9a6dc">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%97%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500&family=Noto+Serif+KR:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-stage="intro">
+
+  <!-- ===== Atmosphere (decorative) ===== -->
+  <div class="bg" aria-hidden="true">
+    <div class="bg-base"></div>
+    <div class="bg-photo"></div>
+    <div class="bg-bright"></div>
+    <i class="bokeh b1"></i><i class="bokeh b2"></i><i class="bokeh b3"></i>
+    <i class="bokeh b4"></i><i class="bokeh b5"></i><i class="bokeh b6"></i>
+    <div class="fog fog-a"></div><div class="fog fog-b"></div>
+    <div class="vignette"></div>
+  </div>
+  <canvas id="snow" aria-hidden="true"></canvas>
+  <div id="hearts-layer"></div>
+  <div id="fx-layer" aria-hidden="true"></div>
+
+  <!-- ===== STAGE A — intro ===== -->
+  <section id="intro" class="stage is-active" aria-label="Welcome">
+    <button type="button" id="skip-btn" class="skip">Skip</button>
+
+    <div class="intro-inner">
+      <div class="yoshi-stage" aria-hidden="true">
+        <div class="puff puff-1"></div><div class="puff puff-2"></div><div class="puff puff-3"></div>
+        <div class="dino-shadow"></div>
+        <div class="dino-hop">
+          <div class="dino-idle">
+            <!-- An original little green dino (not a Nintendo asset) -->
+            <svg class="dino" viewBox="0 0 220 220" width="220" height="220" role="presentation">
+              <!-- tail -->
+              <path class="dino-tail" d="M52 150 C20 150 8 172 20 188 C32 176 44 176 62 172 Z" fill="#6fd08c"/>
+              <!-- back spikes -->
+              <g fill="#ff9db8">
+                <path d="M62 112 L40 100 L58 130 Z"/>
+                <path d="M56 136 L32 132 L54 154 Z"/>
+              </g>
+              <!-- body -->
+              <ellipse cx="108" cy="150" rx="52" ry="48" fill="#7fe09a"/>
+              <ellipse cx="122" cy="158" rx="32" ry="34" fill="#fffdfd"/>
+              <!-- arms -->
+              <ellipse cx="82" cy="152" rx="10" ry="14" fill="#6fd08c" transform="rotate(18 82 152)"/>
+              <!-- feet -->
+              <ellipse cx="86" cy="194" rx="24" ry="13" fill="#ff7d9c"/>
+              <ellipse cx="136" cy="194" rx="24" ry="13" fill="#ff7d9c"/>
+              <ellipse cx="80" cy="189" rx="10" ry="4" fill="#fff" opacity=".45"/>
+              <ellipse cx="130" cy="189" rx="10" ry="4" fill="#fff" opacity=".45"/>
+              <!-- head -->
+              <g class="dino-head">
+                <ellipse cx="112" cy="82" rx="48" ry="42" fill="#7fe09a"/>
+                <!-- snout -->
+                <ellipse cx="148" cy="96" rx="40" ry="30" fill="#8aeaa5"/>
+                <ellipse cx="170" cy="86" rx="5" ry="6" fill="#3f9c63"/>
+                <ellipse cx="156" cy="84" rx="5" ry="6" fill="#3f9c63"/>
+                <path d="M140 112 Q156 120 172 110" stroke="#3f9c63" stroke-width="3" fill="none" stroke-linecap="round"/>
+                <!-- cheeks -->
+                <ellipse cx="128" cy="104" rx="9" ry="6" fill="#ffb3c7" opacity=".85"/>
+                <!-- eyes -->
+                <ellipse cx="108" cy="56" rx="15" ry="21" fill="#fff"/>
+                <ellipse cx="135" cy="58" rx="13" ry="19" fill="#fff"/>
+                <ellipse cx="113" cy="60" rx="6.5" ry="10" fill="#17233f"/>
+                <ellipse cx="138" cy="62" rx="6" ry="9" fill="#17233f"/>
+                <circle cx="115" cy="55" r="2.6" fill="#fff"/>
+                <circle cx="140" cy="57" r="2.4" fill="#fff"/>
+                <!-- eyelids (blink) -->
+                <ellipse class="eyelid" cx="108" cy="56" rx="16" ry="22" fill="#7fe09a"/>
+                <ellipse class="eyelid" cx="135" cy="58" rx="14" ry="20" fill="#7fe09a"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <span class="mini-heart mh-1">♡</span>
+        <span class="mini-heart mh-2">♡</span>
+        <span class="mini-heart mh-3">✦</span>
+      </div>
+
+      <div class="intro-copy">
+        <p class="intro-line" id="intro-title">Something special is waiting for you…</p>
+        <div class="loader" id="loader" role="progressbar" aria-label="Loading" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+          <span class="loader-fill" id="loader-fill"></span>
+          <span class="loader-heart" id="loader-heart">♡</span>
+        </div>
+        <div class="intro-ready" id="intro-ready" hidden>
+          <p class="intro-line intro-line--big">Ready for a little moment?</p>
+          <button type="button" class="btn-primary" id="open-btn">Open your surprise ♡</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STAGE B — lyrics ===== -->
+  <section id="main" class="stage" aria-label="Spring Snow" inert>
+    <header class="song-title">
+      <h1>Spring Snow</h1>
+    </header>
+
+    <div class="lyric-stage" id="lyric-stage" role="region" aria-label="Lyrics" aria-live="polite">
+      <div class="lyric-lines" id="lyric-lines"></div>
+      <p class="start-hint" id="start-hint">Press play ♡</p>
+    </div>
+
+    <div class="player" id="player" role="group" aria-label="Music player">
+      <p class="player-note" id="player-note" role="status" hidden></p>
+
+      <div class="player-row">
+        <button type="button" class="icon-btn" id="restart-btn" aria-label="Restart from the beginning of the section">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 5V2L7 6.5 12 11V8a5 5 0 1 1-5 5H5a7 7 0 1 0 7-8z" fill="currentColor"/></svg>
+        </button>
+
+        <button type="button" class="play-btn" id="play-btn" aria-label="Play" aria-pressed="false">
+          <svg class="ic-play" viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
+          <svg class="ic-pause" viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z" fill="currentColor"/></svg>
+        </button>
+
+        <div class="eq" id="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+
+        <div class="volume">
+          <button type="button" class="icon-btn" id="mute-btn" aria-label="Mute" aria-pressed="false">
+            <svg class="ic-vol" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9zM16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            <svg class="ic-mute" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9zM16 9l5 6M21 9l-5 6" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </button>
+          <input type="range" id="volume" min="0" max="1" step="0.01" value="0.8" aria-label="Volume">
+        </div>
+      </div>
+
+      <div class="progress-row">
+        <span class="time" id="time-now">0:20</span>
+        <input type="range" id="progress" min="0" max="115" step="0.1" value="0" aria-label="Song progress">
+        <span class="time" id="time-end">2:15</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Ending ===== -->
+  <section id="ending" class="stage" aria-label="The end" inert>
+    <div class="ending-inner">
+      <p class="ending-title" id="ending-title">Some moments are too beautiful to end.</p>
+      <p class="ending-sub" id="ending-sub">And this one is for you. ♡</p>
+      <button type="button" class="btn-primary" id="replay-btn">Listen again ♡</button>
+    </div>
+  </section>
+
+  <!-- Yoshi-style cursor (decorative, desktop only) -->
+  <div id="cursor" aria-hidden="true">
+    <svg viewBox="0 0 64 56" width="38" height="34">
+      <ellipse cx="26" cy="26" rx="22" ry="20" fill="#7fe09a" stroke="#fff" stroke-width="2.5"/>
+      <ellipse cx="44" cy="34" rx="18" ry="14" fill="#8aeaa5" stroke="#fff" stroke-width="2.5"/>
+      <ellipse cx="44" cy="34" rx="15" ry="11" fill="#8aeaa5"/>
+      <ellipse cx="53" cy="28" rx="2.6" ry="3.2" fill="#3f9c63"/>
+      <ellipse cx="25" cy="14" rx="7" ry="10" fill="#fff"/>
+      <ellipse cx="38" cy="16" rx="6" ry="9" fill="#fff"/>
+      <ellipse cx="27" cy="16" rx="3.2" ry="5" fill="#17233f"/>
+      <ellipse cx="40" cy="18" rx="3" ry="4.6" fill="#17233f"/>
+      <ellipse cx="34" cy="38" rx="4.5" ry="3" fill="#ffb3c7" opacity=".9"/>
+    </svg>
+  </div>
+
+  <noscript><p style="position:fixed;inset:auto 0 20px;text-align:center;color:#17233f">This little gift needs JavaScript to open ♡</p></noscript>
+
+  <audio id="audio" preload="metadata"></audio>
+
+  <script src="lyrics.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

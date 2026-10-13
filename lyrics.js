@@ -81,56 +81,56 @@ window.SONGS = {
       { time: 23.8, text: "Na hindi basta lang" },
       { time: 26.4, text: "Ang iyong halaga, hah-hah" },
       { time: 29.0, text: "Para ganyanin ka, ah-ah" },
-      { time: 38.0, text: "Laging binabalewala, ah" },
+      { time: 37.0, text: "Laging binabalewala, ah" },
       { time: 43.2, text: "Siguro naman iyong napapansin" },
       { time: 46.8, text: "Kung paano tratuhin" },
-      { time: 51.4, text: "Kung ako pa 'yan, 'di ka gagano'nin" },
+      { time: 50.4, text: "Kung ako pa 'yan, 'di ka gagano'nin" },
       { time: 54.0, text: "At ika'y mamahalin" },
-      { time: 58.6, text: "Na ng tama" },
+      { time: 57.6, text: "Na ng tama" },
       { time: 61.2, text: "At 'yong madarama, hah-hah" },
-      { time: 69.8, text: "Na ika'y mahalaga, ooh" },
+      { time: 67.0, text: "Na ika'y mahalaga, ooh" },
 
       // Chorus 1
       { time: 74.0, text: "'Di ka mahirap mahalin, hmm" },
       { time: 81.5, text: "Ikaw ang pangarap na ibigin" },
-      { time: 90.0, text: "Dito ka na lang, sa 'kin ka na lang, oh, baby, hmm" },
-      { time: 98.5, text: "Dito ka na lang, sa 'kin ka na lang, oh, baby, yeah" },
+      { time: 89.0, text: "Dito ka na lang, sa 'kin ka na lang, oh, baby, hmm" },
+      { time: 97.5, text: "Dito ka na lang, sa 'kin ka na lang, oh, baby, yeah" },
 
       // Verse 2
       { time: 120.0, text: "'Di pa ba sapat ang mga luha't" },
-      { time: 125.8, text: "Sakit na nadarama?" },
-      { time: 129.6, text: "Bakit pa kailangang magtiis" },
-      { time: 132.4, text: "Kung hindi ka na masaya" },
+      { time: 124.4, text: "Sakit na nadarama?" },
+      { time: 128.0, text: "Bakit pa kailangang magtiis" },
+      { time: 131.4, text: "Kung hindi ka na masaya" },
       { time: 134.2, text: "Sa pagmamahal niya? Ah-hah" },
-      { time: 139.0, text: "'Wag nang ipilit pa, hah-hah" },
-      { time: 145.8, text: "Ang sarili sa kaniya, ooh" },
+      { time: 138.0, text: "'Wag nang ipilit pa, hah-hah" },
+      { time: 144.0, text: "Ang sarili sa kaniya, ooh" },
 
       // Chorus 2
       { time: 150.0, text: "'Di ka mahirap mahalin" },
-      { time: 159.5, text: "Ikaw ang pangarap na ibigin" },
-      { time: 166.6, text: "Dito ka na lang, sa 'kin ka na lang, oh, baby" },
-      { time: 174.5, text: "Dito ka na lang, sa 'kin ka na lang, oh, baby, ooh" },
+      { time: 158.5, text: "Ikaw ang pangarap na ibigin" },
+      { time: 166.0, text: "Dito ka na lang, sa 'kin ka na lang, oh, baby" },
+      { time: 173.5, text: "Dito ka na lang, sa 'kin ka na lang, oh, baby, ooh" },
 
       // Chorus 3
       { time: 182.0, text: "'Di ka mahirap mahalin" },
-      { time: 189.5, text: "Ikaw ang pangarap ibigin" },
+      { time: 189.4, text: "Ikaw ang pangarap ibigin" },
       { time: 197.0, text: "Dito ka na lang, sa 'kin ka na lang, oh, baby" },
-      { time: 205.5, text: "Dito ka na lang, sa 'kin ka na lang, oh, baby, ah" },
+      { time: 205.0, text: "Dito ka na lang, sa 'kin ka na lang, oh, baby, ah" },
 
       // Bridge
       { time: 213.0, text: "Ooh, whoa, yeah, yeah" },
 
       // Chorus 4
-      { time: 242.0, text: "'Di ka mahirap mahalin" },
-      { time: 251.5, text: "Ikaw ang pangarap na ibigin" },
-      { time: 260.0, text: "Dito ka na lang, sa 'kin ka na lang, oh, baby" },
-      { time: 266.5, text: "Sa 'kin ka na lang, sa 'kin ka na lang, oh, baby, yeah (sa 'kin ka na lang)" },
+      { time: 244.0, text: "'Di ka mahirap mahalin" },
+      { time: 250.5, text: "Ikaw ang pangarap na ibigin" },
+      { time: 259.0, text: "Dito ka na lang, sa 'kin ka na lang, oh, baby" },
+      { time: 266.0, text: "Sa 'kin ka na lang, sa 'kin ka na lang, oh, baby, yeah (sa 'kin ka na lang)" },
 
       // Final Chorus
       { time: 274.0, text: "'Di ako mahirap mahalin, ah" },
       { time: 281.5, text: "Ikaw ang pangarap na ibigin" },
-      { time: 287.0, text: "Dito ka na lang, sa 'kin ka na lang, oh, baby" },
-      { time: 297.5, text: "Dito ka na lang, sa 'kin ka na lang, oh, baby, ooh, ah" }
+      { time: 286.6, text: "Dito ka na lang, sa 'kin ka na lang, oh, baby" },
+      { time: 296.5, text: "Dito ka na lang, sa 'kin ka na lang, oh, baby, ooh, ah" }
     ]
   }
 };
